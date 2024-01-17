@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(26,26,26);
+    font-family: sans-serif;
+}
+#ip {
+    inline-size: 500px;
+    min-block-size: 30px;
+    box-shadow: -3px -3px 5px rgb(63,63,63), 3px 3px 5px #000;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 165px;
+    left: 50%;
+    margin: -50px auto;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* Keyboard styling */
+.keyboard {
+    box-shadow: -3px -3px 5px rgb(63,63,63), 3px 3px 5px #000;
+    inline-size: 680px;
+    margin: 200px auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.row {
+    margin: 5px;
+    user-select: none;
+}
+button {
+    inline-size: 50px;
+    block-size: 50px;
+    font-weight: bold;
+    margin: 0 4px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    box-shadow: -3px -3px 5px rgb(63,63,63), 3px 3px 5px #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* backspace button and space */
+.row4, .backspace, .space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keyboard .backspace, 
+.space {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.backspace, 
+.space {
+    border-radius: 5px;
+    box-shadow: -3px -3px 5px rgb(63,63,63), 3px 3px 5px #000;
+}
+.keyboard .space {
+    inline-size: 300px;
+    block-size: 50px;
+}
+.keyboard .backspace {
+    inline-size: 100px;
+    block-size: 50px;
+    margin-inline-start: 15px;
+}
+
+/* Onclick effect */
+.keyboard .active {
+    box-shadow: -2px -2px 4px rgb(63,63,63), inset 2px 2px 4px #000;
+    color: yellow;
+}
