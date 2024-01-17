@@ -15,12 +15,13 @@ body {
     color: #fff;
     letter-spacing: 1px;
     position: absolute;
-    top: 165px;
-    left: 50%;
+    inset-block-start: 165px;
+    inset-inline-start: 50%;
     margin: -50px auto;
     transform: translateX(-50%);
     font-size: 18px;
     text-transform: capitalize;
+    overflow: auto;
 }
 
 /* Keyboard styling */
