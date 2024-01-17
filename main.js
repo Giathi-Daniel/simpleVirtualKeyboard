@@ -59,3 +59,35 @@ function back() {
 
     p.innerHTML = p.innerHTML.slice(0, -1)
 }
+
+// when a mouse button is pressed over an element
+backSpace.onmousedown = back
+
+// when the button is released
+backSpace.onmouseup = function() {
+    backSpace.classList.remove('active')
+}
+
+// TOUCH SCREEN KEYBOARD
+for (let x of button) {
+    x.addEventListener('touchstart', function(){
+        x.className = 'active'
+    })
+}
+for (let y of button) {
+    y.addEventListener('touchend', function(){
+        space.classList.remove('active')
+    });
+}
+space.addEventListener('touchstart', function(){
+    space.classList.add('active')
+})
+space.addEventListener('touchend', function() {
+    space.classList.remove('active')
+})
+backSpace.addEventListener('touchstart', function() {
+    backSpace.className += 'active'
+})
+backSpace.addEventListener('touchend', function(){
+    backSpace.classList.remove('active')
+})
